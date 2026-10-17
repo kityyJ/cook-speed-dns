@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-17 18:48:26 UTC",
+  "generated_at": "2026-10-17 21:23:50 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 55,
+    "ct": 52,
     "cu": 120,
     "cmcc": 51,
-    "all": 208
+    "all": 219
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 74,
+  "filtered_slow": 59,
   "sources": [
     {
       "group": "ct",
@@ -117,7 +117,7 @@
       "name": "WeTest 三网",
       "url": "https://bestcf.pages.dev/wetest/ipv4.txt",
       "ok": true,
-      "count": 17,
+      "count": 2,
       "error": ""
     },
     {
@@ -126,7 +126,7 @@
       "name": "CFYes 三网",
       "url": "https://bestcf.pages.dev/cfyes/ipv4.txt",
       "ok": true,
-      "count": 17,
+      "count": 12,
       "error": ""
     },
     {
