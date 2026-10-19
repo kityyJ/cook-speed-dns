@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-19 01:04:34 UTC",
+  "generated_at": "2026-10-19 06:03:50 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 59,
+    "ct": 60,
     "cu": 120,
     "cmcc": 56,
-    "all": 241
+    "all": 234
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 52,
+  "filtered_slow": 60,
   "sources": [
     {
       "group": "ct",
@@ -81,7 +81,7 @@
       "name": "CM CloudFlareYes",
       "url": "https://addressesapi.090227.xyz/CloudFlareYes",
       "ok": true,
-      "count": 10,
+      "count": 15,
       "error": ""
     },
     {
@@ -189,7 +189,7 @@
       "name": "S5 公益",
       "url": "https://bestcf.pages.dev/s5gy/all.txt",
       "ok": true,
-      "count": 115,
+      "count": 116,
       "error": ""
     }
   ]
