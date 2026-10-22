@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-22 12:18:10 UTC",
+  "generated_at": "2026-10-22 17:33:22 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 52,
+    "ct": 59,
     "cu": 120,
-    "cmcc": 51,
-    "all": 251
+    "cmcc": 56,
+    "all": 262
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 25,
+  "filtered_slow": 28,
   "sources": [
     {
       "group": "ct",
@@ -81,7 +81,7 @@
       "name": "CM CloudFlareYes",
       "url": "https://addressesapi.090227.xyz/CloudFlareYes",
       "ok": true,
-      "count": 15,
+      "count": 10,
       "error": ""
     },
     {
@@ -117,7 +117,7 @@
       "name": "WeTest 三网",
       "url": "https://bestcf.pages.dev/wetest/ipv4.txt",
       "ok": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -189,7 +189,7 @@
       "name": "S5 公益",
       "url": "https://bestcf.pages.dev/s5gy/all.txt",
       "ok": true,
-      "count": 115,
+      "count": 116,
       "error": ""
     }
   ]
