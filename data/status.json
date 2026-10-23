@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-23 18:39:54 UTC",
+  "generated_at": "2026-10-23 21:59:59 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 53,
+    "ct": 51,
     "cu": 120,
     "cmcc": 51,
-    "all": 247
+    "all": 275
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 31,
+  "filtered_slow": 3,
   "sources": [
     {
       "group": "ct",
@@ -180,7 +180,7 @@
       "name": "Gslege 测速",
       "url": "https://bestcf.pages.dev/gslege/Cfxyz.txt",
       "ok": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     },
     {
