@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-24 16:53:04 UTC",
+  "generated_at": "2026-10-24 19:24:23 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 52,
+    "ct": 51,
     "cu": 120,
     "cmcc": 51,
-    "all": 251
+    "all": 258
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 26,
+  "filtered_slow": 15,
   "sources": [
     {
       "group": "ct",
@@ -81,7 +81,7 @@
       "name": "CM CloudFlareYes",
       "url": "https://addressesapi.090227.xyz/CloudFlareYes",
       "ok": true,
-      "count": 10,
+      "count": 15,
       "error": ""
     },
     {
@@ -90,7 +90,7 @@
       "name": "ZhiXuan 镜像",
       "url": "https://addressesapi.090227.xyz/ip.164746.xyz",
       "ok": true,
-      "count": 2,
+      "count": 1,
       "error": ""
     },
     {
@@ -117,7 +117,7 @@
       "name": "WeTest 三网",
       "url": "https://bestcf.pages.dev/wetest/ipv4.txt",
       "ok": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -189,7 +189,7 @@
       "name": "S5 公益",
       "url": "https://bestcf.pages.dev/s5gy/all.txt",
       "ok": true,
-      "count": 115,
+      "count": 116,
       "error": ""
     }
   ]
