@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T08:34:08+00:00",
+  "generated_at": "2026-10-26T09:08:46+00:00",
   "source": "https://www.cloudflare.com/ips-v4",
   "measurement_origin": "github-hosted",
   "carrier_verified": false,
@@ -9,392 +9,210 @@
     "www.jia.nz"
   ],
   "scanned": 480,
-  "passed": 76,
+  "passed": 86,
   "items": [
     {
-      "ip": "190.93.245.213",
+      "ip": "104.27.201.102",
       "ok": true,
-      "ttfb_ms": 117.3,
-      "total_ms": 117.4,
+      "ttfb_ms": 111.9,
+      "total_ms": 112.0,
       "checks": {
         "cook.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 9.3,
-          "tls_ms": 26.0,
-          "ttfb_ms": 111.7,
-          "total_ms": 111.8,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.2,
-          "tls_ms": 25.9,
-          "ttfb_ms": 123.0,
-          "total_ms": 123.1,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "190.93.246.109",
-      "ok": true,
-      "ttfb_ms": 118.8,
-      "total_ms": 119.0,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 16.4,
-          "tls_ms": 27.4,
-          "ttfb_ms": 120.2,
-          "total_ms": 120.5,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 8.9,
-          "tls_ms": 28.4,
-          "ttfb_ms": 117.5,
-          "total_ms": 117.6,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "190.93.244.130",
-      "ok": true,
-      "ttfb_ms": 120.5,
-      "total_ms": 120.7,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.0,
-          "tls_ms": 27.4,
-          "ttfb_ms": 112.9,
-          "total_ms": 113.0,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 8.8,
+          "tcp_ms": 4.9,
           "tls_ms": 26.8,
-          "ttfb_ms": 128.2,
-          "total_ms": 128.3,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "188.114.99.216",
-      "ok": true,
-      "ttfb_ms": 122.4,
-      "total_ms": 122.5,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 13.9,
-          "tls_ms": 29.3,
-          "ttfb_ms": 120.3,
-          "total_ms": 120.4,
+          "ttfb_ms": 108.4,
+          "total_ms": 108.5,
           "body_bytes": 16384
         },
         "www.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 9.1,
-          "tls_ms": 26.8,
-          "ttfb_ms": 124.5,
-          "total_ms": 124.6,
+          "tcp_ms": 5.1,
+          "tls_ms": 31.0,
+          "ttfb_ms": 115.4,
+          "total_ms": 115.5,
           "body_bytes": 12635
         }
       }
     },
     {
-      "ip": "104.27.54.13",
+      "ip": "104.24.94.60",
       "ok": true,
-      "ttfb_ms": 123.8,
-      "total_ms": 124.0,
+      "ttfb_ms": 117.0,
+      "total_ms": 117.2,
       "checks": {
         "cook.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 9.1,
-          "tls_ms": 26.0,
-          "ttfb_ms": 120.1,
-          "total_ms": 120.2,
+          "tcp_ms": 5.3,
+          "tls_ms": 39.1,
+          "ttfb_ms": 119.7,
+          "total_ms": 119.9,
           "body_bytes": 16384
         },
         "www.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 9.0,
-          "tls_ms": 27.1,
-          "ttfb_ms": 127.6,
-          "total_ms": 127.8,
+          "tcp_ms": 5.4,
+          "tls_ms": 30.6,
+          "ttfb_ms": 114.3,
+          "total_ms": 114.4,
           "body_bytes": 12635
         }
       }
     },
     {
-      "ip": "188.114.97.61",
+      "ip": "104.19.119.16",
       "ok": true,
-      "ttfb_ms": 123.9,
-      "total_ms": 124.0,
+      "ttfb_ms": 126.0,
+      "total_ms": 126.2,
       "checks": {
         "cook.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 10.2,
+          "tcp_ms": 4.9,
           "tls_ms": 28.9,
-          "ttfb_ms": 117.4,
-          "total_ms": 117.5,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.0,
-          "tls_ms": 25.5,
-          "ttfb_ms": 130.3,
-          "total_ms": 130.4,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "104.24.231.254",
-      "ok": true,
-      "ttfb_ms": 126.2,
-      "total_ms": 126.3,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.0,
-          "tls_ms": 26.1,
-          "ttfb_ms": 122.4,
-          "total_ms": 122.6,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 8.7,
-          "tls_ms": 28.9,
-          "ttfb_ms": 130.0,
-          "total_ms": 130.0,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "104.24.177.241",
-      "ok": true,
-      "ttfb_ms": 126.3,
-      "total_ms": 126.4,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.6,
-          "tls_ms": 27.1,
-          "ttfb_ms": 126.7,
-          "total_ms": 126.8,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.0,
-          "tls_ms": 25.9,
-          "ttfb_ms": 125.9,
-          "total_ms": 126.0,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "190.93.245.23",
-      "ok": true,
-      "ttfb_ms": 126.4,
-      "total_ms": 126.5,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 8.8,
-          "tls_ms": 25.8,
-          "ttfb_ms": 122.8,
-          "total_ms": 122.9,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 8.7,
-          "tls_ms": 28.1,
-          "ttfb_ms": 130.0,
-          "total_ms": 130.1,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "141.101.120.219",
-      "ok": true,
-      "ttfb_ms": 126.7,
-      "total_ms": 126.8,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.2,
-          "tls_ms": 26.4,
-          "ttfb_ms": 126.1,
-          "total_ms": 126.2,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 8.7,
-          "tls_ms": 26.9,
-          "ttfb_ms": 127.3,
-          "total_ms": 127.4,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "190.93.246.154",
-      "ok": true,
-      "ttfb_ms": 126.8,
-      "total_ms": 127.0,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.1,
-          "tls_ms": 31.1,
-          "ttfb_ms": 128.7,
-          "total_ms": 128.8,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 8.8,
-          "tls_ms": 26.9,
-          "ttfb_ms": 125.0,
-          "total_ms": 125.2,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "104.21.232.44",
-      "ok": true,
-      "ttfb_ms": 127.3,
-      "total_ms": 127.5,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.0,
-          "tls_ms": 27.0,
-          "ttfb_ms": 122.8,
-          "total_ms": 123.1,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 8.8,
-          "tls_ms": 29.6,
-          "ttfb_ms": 131.9,
-          "total_ms": 132.0,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "104.26.15.236",
-      "ok": true,
-      "ttfb_ms": 127.4,
-      "total_ms": 127.5,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.8,
-          "tls_ms": 36.5,
-          "ttfb_ms": 137.7,
-          "total_ms": 137.8,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 10.9,
-          "tls_ms": 28.2,
-          "ttfb_ms": 117.1,
-          "total_ms": 117.2,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "104.24.72.10",
-      "ok": true,
-      "ttfb_ms": 127.6,
-      "total_ms": 127.8,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 8.8,
-          "tls_ms": 27.5,
-          "ttfb_ms": 120.1,
-          "total_ms": 120.2,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 8.7,
-          "tls_ms": 26.7,
           "ttfb_ms": 135.2,
-          "total_ms": 135.3,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "190.93.245.182",
-      "ok": true,
-      "ttfb_ms": 127.8,
-      "total_ms": 127.9,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 10.7,
-          "tls_ms": 28.3,
-          "ttfb_ms": 123.8,
-          "total_ms": 123.9,
+          "total_ms": 135.4,
           "body_bytes": 16384
         },
         "www.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 9.6,
-          "tls_ms": 27.7,
+          "tcp_ms": 4.9,
+          "tls_ms": 29.6,
+          "ttfb_ms": 116.9,
+          "total_ms": 117.0,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "104.19.184.1",
+      "ok": true,
+      "ttfb_ms": 128.2,
+      "total_ms": 128.3,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.7,
+          "tls_ms": 39.1,
+          "ttfb_ms": 127.5,
+          "total_ms": 127.7,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 4.9,
+          "tls_ms": 33.5,
+          "ttfb_ms": 128.8,
+          "total_ms": 128.9,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "162.159.132.213",
+      "ok": true,
+      "ttfb_ms": 129.1,
+      "total_ms": 129.2,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.0,
+          "tls_ms": 36.7,
+          "ttfb_ms": 114.0,
+          "total_ms": 114.1,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.2,
+          "tls_ms": 32.7,
+          "ttfb_ms": 144.2,
+          "total_ms": 144.3,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "162.159.242.59",
+      "ok": true,
+      "ttfb_ms": 130.2,
+      "total_ms": 130.3,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.3,
+          "tls_ms": 35.6,
+          "ttfb_ms": 126.4,
+          "total_ms": 126.6,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.1,
+          "tls_ms": 28.4,
+          "ttfb_ms": 134.0,
+          "total_ms": 134.1,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "172.64.155.79",
+      "ok": true,
+      "ttfb_ms": 130.4,
+      "total_ms": 130.6,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.1,
+          "tls_ms": 29.8,
+          "ttfb_ms": 112.7,
+          "total_ms": 112.8,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 4.9,
+          "tls_ms": 39.6,
+          "ttfb_ms": 148.2,
+          "total_ms": 148.4,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "141.101.114.57",
+      "ok": true,
+      "ttfb_ms": 131.6,
+      "total_ms": 131.8,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.2,
+          "tls_ms": 34.8,
+          "ttfb_ms": 131.6,
+          "total_ms": 131.7,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.3,
+          "tls_ms": 36.4,
           "ttfb_ms": 131.7,
           "total_ms": 131.8,
           "body_bytes": 12635
@@ -402,215 +220,7 @@
       }
     },
     {
-      "ip": "104.27.98.150",
-      "ok": true,
-      "ttfb_ms": 128.1,
-      "total_ms": 128.2,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.2,
-          "tls_ms": 26.9,
-          "ttfb_ms": 124.0,
-          "total_ms": 124.1,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.0,
-          "tls_ms": 27.5,
-          "ttfb_ms": 132.2,
-          "total_ms": 132.3,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "104.25.14.7",
-      "ok": true,
-      "ttfb_ms": 129.2,
-      "total_ms": 129.3,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.3,
-          "tls_ms": 27.3,
-          "ttfb_ms": 133.5,
-          "total_ms": 133.6,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.0,
-          "tls_ms": 28.6,
-          "ttfb_ms": 125.0,
-          "total_ms": 125.1,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "104.25.255.94",
-      "ok": true,
-      "ttfb_ms": 129.8,
-      "total_ms": 129.9,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.0,
-          "tls_ms": 32.4,
-          "ttfb_ms": 114.9,
-          "total_ms": 115.1,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 8.6,
-          "tls_ms": 27.7,
-          "ttfb_ms": 144.6,
-          "total_ms": 144.7,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "190.93.246.46",
-      "ok": true,
-      "ttfb_ms": 129.8,
-      "total_ms": 129.9,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 8.8,
-          "tls_ms": 25.1,
-          "ttfb_ms": 123.4,
-          "total_ms": 123.6,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.0,
-          "tls_ms": 29.2,
-          "ttfb_ms": 136.2,
-          "total_ms": 136.3,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "188.114.98.114",
-      "ok": true,
-      "ttfb_ms": 130.2,
-      "total_ms": 130.2,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.1,
-          "tls_ms": 26.1,
-          "ttfb_ms": 124.7,
-          "total_ms": 124.8,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.8,
-          "tls_ms": 27.5,
-          "ttfb_ms": 135.6,
-          "total_ms": 135.7,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "172.67.236.62",
-      "ok": true,
-      "ttfb_ms": 130.8,
-      "total_ms": 130.9,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.9,
-          "tls_ms": 25.1,
-          "ttfb_ms": 127.5,
-          "total_ms": 127.6,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.3,
-          "tls_ms": 27.3,
-          "ttfb_ms": 134.2,
-          "total_ms": 134.3,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "141.101.122.237",
-      "ok": true,
-      "ttfb_ms": 131.2,
-      "total_ms": 131.3,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.0,
-          "tls_ms": 27.4,
-          "ttfb_ms": 131.9,
-          "total_ms": 132.0,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 9.0,
-          "tls_ms": 29.7,
-          "ttfb_ms": 130.6,
-          "total_ms": 130.7,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "104.25.31.188",
-      "ok": true,
-      "ttfb_ms": 132.2,
-      "total_ms": 132.4,
-      "checks": {
-        "cook.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 13.9,
-          "tls_ms": 27.3,
-          "ttfb_ms": 119.8,
-          "total_ms": 120.0,
-          "body_bytes": 16384
-        },
-        "www.jia.nz": {
-          "ok": true,
-          "status": 200,
-          "tcp_ms": 8.8,
-          "tls_ms": 57.3,
-          "ttfb_ms": 144.7,
-          "total_ms": 144.8,
-          "body_bytes": 12635
-        }
-      }
-    },
-    {
-      "ip": "172.66.175.112",
+      "ip": "104.25.20.51",
       "ok": true,
       "ttfb_ms": 132.6,
       "total_ms": 132.7,
@@ -618,175 +228,565 @@
         "cook.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 9.3,
-          "tls_ms": 28.4,
-          "ttfb_ms": 137.4,
-          "total_ms": 137.5,
+          "tcp_ms": 5.3,
+          "tls_ms": 28.5,
+          "ttfb_ms": 105.7,
+          "total_ms": 105.8,
           "body_bytes": 16384
         },
         "www.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 9.0,
-          "tls_ms": 28.5,
-          "ttfb_ms": 127.7,
-          "total_ms": 127.8,
+          "tcp_ms": 5.1,
+          "tls_ms": 43.8,
+          "ttfb_ms": 159.4,
+          "total_ms": 159.6,
           "body_bytes": 12635
         }
       }
     },
     {
-      "ip": "104.24.241.5",
+      "ip": "190.93.244.73",
       "ok": true,
-      "ttfb_ms": 132.7,
-      "total_ms": 132.8,
+      "ttfb_ms": 132.8,
+      "total_ms": 133.0,
       "checks": {
         "cook.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 9.2,
-          "tls_ms": 27.3,
-          "ttfb_ms": 134.8,
-          "total_ms": 134.9,
+          "tcp_ms": 4.9,
+          "tls_ms": 39.3,
+          "ttfb_ms": 135.1,
+          "total_ms": 135.3,
           "body_bytes": 16384
         },
         "www.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 9.0,
-          "tls_ms": 27.3,
-          "ttfb_ms": 130.6,
+          "tcp_ms": 5.0,
+          "tls_ms": 43.7,
+          "ttfb_ms": 130.5,
           "total_ms": 130.7,
           "body_bytes": 12635
         }
       }
     },
     {
-      "ip": "188.114.97.244",
+      "ip": "188.114.98.84",
       "ok": true,
-      "ttfb_ms": 132.8,
-      "total_ms": 132.9,
+      "ttfb_ms": 133.6,
+      "total_ms": 133.8,
       "checks": {
         "cook.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 14.4,
-          "tls_ms": 25.3,
-          "ttfb_ms": 114.3,
-          "total_ms": 114.4,
+          "tcp_ms": 5.3,
+          "tls_ms": 33.1,
+          "ttfb_ms": 138.1,
+          "total_ms": 138.3,
           "body_bytes": 16384
         },
         "www.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 9.2,
-          "tls_ms": 32.3,
-          "ttfb_ms": 151.4,
-          "total_ms": 151.5,
+          "tcp_ms": 5.6,
+          "tls_ms": 41.8,
+          "ttfb_ms": 129.1,
+          "total_ms": 129.3,
           "body_bytes": 12635
         }
       }
     },
     {
-      "ip": "104.24.241.159",
+      "ip": "172.66.200.172",
       "ok": true,
-      "ttfb_ms": 133.2,
-      "total_ms": 133.2,
+      "ttfb_ms": 133.8,
+      "total_ms": 133.9,
       "checks": {
         "cook.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 9.7,
-          "tls_ms": 32.5,
-          "ttfb_ms": 140.0,
-          "total_ms": 140.1,
+          "tcp_ms": 6.6,
+          "tls_ms": 33.3,
+          "ttfb_ms": 142.3,
+          "total_ms": 142.5,
           "body_bytes": 16384
         },
         "www.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 8.8,
-          "tls_ms": 27.7,
-          "ttfb_ms": 126.3,
-          "total_ms": 126.4,
+          "tcp_ms": 5.3,
+          "tls_ms": 31.4,
+          "ttfb_ms": 125.2,
+          "total_ms": 125.3,
           "body_bytes": 12635
         }
       }
     },
     {
-      "ip": "172.67.185.187",
+      "ip": "188.114.97.122",
       "ok": true,
-      "ttfb_ms": 133.2,
-      "total_ms": 133.2,
+      "ttfb_ms": 134.1,
+      "total_ms": 134.2,
       "checks": {
         "cook.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 9.0,
-          "tls_ms": 27.4,
-          "ttfb_ms": 121.8,
-          "total_ms": 121.9,
+          "tcp_ms": 9.9,
+          "tls_ms": 39.8,
+          "ttfb_ms": 142.7,
+          "total_ms": 142.9,
           "body_bytes": 16384
         },
         "www.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 8.9,
-          "tls_ms": 24.9,
-          "ttfb_ms": 144.5,
-          "total_ms": 144.6,
+          "tcp_ms": 4.9,
+          "tls_ms": 29.2,
+          "ttfb_ms": 125.4,
+          "total_ms": 125.6,
           "body_bytes": 12635
         }
       }
     },
     {
-      "ip": "172.64.187.126",
+      "ip": "190.93.245.136",
       "ok": true,
-      "ttfb_ms": 133.2,
-      "total_ms": 133.3,
+      "ttfb_ms": 135.5,
+      "total_ms": 135.6,
       "checks": {
         "cook.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 13.4,
+          "tcp_ms": 5.4,
+          "tls_ms": 43.9,
+          "ttfb_ms": 132.3,
+          "total_ms": 132.4,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.1,
+          "tls_ms": 31.6,
+          "ttfb_ms": 138.7,
+          "total_ms": 138.8,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "190.93.245.93",
+      "ok": true,
+      "ttfb_ms": 135.6,
+      "total_ms": 135.8,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 4.9,
+          "tls_ms": 28.4,
+          "ttfb_ms": 139.5,
+          "total_ms": 139.8,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 4.7,
+          "tls_ms": 27.6,
+          "ttfb_ms": 131.7,
+          "total_ms": 131.8,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "172.67.230.79",
+      "ok": true,
+      "ttfb_ms": 135.8,
+      "total_ms": 136.2,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.1,
+          "tls_ms": 33.7,
+          "ttfb_ms": 137.2,
+          "total_ms": 137.4,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.4,
+          "tls_ms": 33.8,
+          "ttfb_ms": 134.5,
+          "total_ms": 135.1,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "188.114.99.195",
+      "ok": true,
+      "ttfb_ms": 136.1,
+      "total_ms": 136.2,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.8,
           "tls_ms": 34.3,
-          "ttfb_ms": 139.2,
-          "total_ms": 139.3,
+          "ttfb_ms": 113.8,
+          "total_ms": 113.9,
           "body_bytes": 16384
         },
         "www.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 9.1,
-          "tls_ms": 26.4,
-          "ttfb_ms": 127.2,
-          "total_ms": 127.3,
+          "tcp_ms": 5.6,
+          "tls_ms": 26.8,
+          "ttfb_ms": 158.4,
+          "total_ms": 158.5,
           "body_bytes": 12635
         }
       }
     },
     {
-      "ip": "104.21.230.190",
+      "ip": "104.19.14.226",
       "ok": true,
-      "ttfb_ms": 133.2,
-      "total_ms": 133.4,
+      "ttfb_ms": 137.1,
+      "total_ms": 137.2,
       "checks": {
         "cook.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 11.8,
-          "tls_ms": 26.6,
-          "ttfb_ms": 129.5,
-          "total_ms": 129.7,
+          "tcp_ms": 5.0,
+          "tls_ms": 30.7,
+          "ttfb_ms": 125.1,
+          "total_ms": 125.2,
           "body_bytes": 16384
         },
         "www.jia.nz": {
           "ok": true,
           "status": 200,
-          "tcp_ms": 9.3,
-          "tls_ms": 32.6,
-          "ttfb_ms": 137.0,
-          "total_ms": 137.1,
+          "tcp_ms": 4.9,
+          "tls_ms": 43.6,
+          "ttfb_ms": 149.2,
+          "total_ms": 149.3,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "104.18.25.87",
+      "ok": true,
+      "ttfb_ms": 137.7,
+      "total_ms": 137.8,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.0,
+          "tls_ms": 47.7,
+          "ttfb_ms": 138.8,
+          "total_ms": 138.9,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.0,
+          "tls_ms": 33.0,
+          "ttfb_ms": 136.6,
+          "total_ms": 136.7,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "104.24.86.41",
+      "ok": true,
+      "ttfb_ms": 137.8,
+      "total_ms": 137.9,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.1,
+          "tls_ms": 29.9,
+          "ttfb_ms": 128.2,
+          "total_ms": 128.3,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 7.1,
+          "tls_ms": 31.5,
+          "ttfb_ms": 147.4,
+          "total_ms": 147.6,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "172.67.73.3",
+      "ok": true,
+      "ttfb_ms": 139.8,
+      "total_ms": 139.9,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.1,
+          "tls_ms": 31.8,
+          "ttfb_ms": 129.6,
+          "total_ms": 129.8,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.2,
+          "tls_ms": 33.6,
+          "ttfb_ms": 149.9,
+          "total_ms": 150.0,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "104.27.203.249",
+      "ok": true,
+      "ttfb_ms": 140.5,
+      "total_ms": 140.6,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.0,
+          "tls_ms": 28.4,
+          "ttfb_ms": 123.1,
+          "total_ms": 123.2,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.6,
+          "tls_ms": 29.9,
+          "ttfb_ms": 157.9,
+          "total_ms": 158.0,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "172.67.137.7",
+      "ok": true,
+      "ttfb_ms": 141.0,
+      "total_ms": 141.1,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.0,
+          "tls_ms": 27.1,
+          "ttfb_ms": 130.0,
+          "total_ms": 130.2,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.4,
+          "tls_ms": 30.9,
+          "ttfb_ms": 152.0,
+          "total_ms": 152.1,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "188.114.99.15",
+      "ok": true,
+      "ttfb_ms": 141.4,
+      "total_ms": 141.5,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.5,
+          "tls_ms": 53.0,
+          "ttfb_ms": 147.8,
+          "total_ms": 148.0,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.3,
+          "tls_ms": 41.3,
+          "ttfb_ms": 134.9,
+          "total_ms": 135.0,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "190.93.247.215",
+      "ok": true,
+      "ttfb_ms": 141.4,
+      "total_ms": 141.6,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.2,
+          "tls_ms": 52.0,
+          "ttfb_ms": 146.5,
+          "total_ms": 146.6,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.0,
+          "tls_ms": 29.5,
+          "ttfb_ms": 136.4,
+          "total_ms": 136.5,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "141.101.114.68",
+      "ok": true,
+      "ttfb_ms": 142.1,
+      "total_ms": 142.2,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.0,
+          "tls_ms": 33.5,
+          "ttfb_ms": 133.3,
+          "total_ms": 133.5,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.2,
+          "tls_ms": 32.7,
+          "ttfb_ms": 150.9,
+          "total_ms": 151.0,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "141.101.115.25",
+      "ok": true,
+      "ttfb_ms": 143.1,
+      "total_ms": 143.2,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.2,
+          "tls_ms": 29.7,
+          "ttfb_ms": 142.5,
+          "total_ms": 142.7,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 8.5,
+          "tls_ms": 30.9,
+          "ttfb_ms": 143.6,
+          "total_ms": 143.7,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "104.24.64.9",
+      "ok": true,
+      "ttfb_ms": 143.1,
+      "total_ms": 143.3,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.1,
+          "tls_ms": 30.0,
+          "ttfb_ms": 126.1,
+          "total_ms": 126.4,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 6.5,
+          "tls_ms": 38.9,
+          "ttfb_ms": 160.1,
+          "total_ms": 160.2,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "104.26.14.238",
+      "ok": true,
+      "ttfb_ms": 143.4,
+      "total_ms": 143.6,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 4.8,
+          "tls_ms": 35.0,
+          "ttfb_ms": 124.1,
+          "total_ms": 124.2,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 6.0,
+          "tls_ms": 45.8,
+          "ttfb_ms": 162.8,
+          "total_ms": 162.9,
+          "body_bytes": 12635
+        }
+      }
+    },
+    {
+      "ip": "104.24.7.132",
+      "ok": true,
+      "ttfb_ms": 143.9,
+      "total_ms": 144.1,
+      "checks": {
+        "cook.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 5.4,
+          "tls_ms": 32.4,
+          "ttfb_ms": 140.8,
+          "total_ms": 140.9,
+          "body_bytes": 16384
+        },
+        "www.jia.nz": {
+          "ok": true,
+          "status": 200,
+          "tcp_ms": 4.9,
+          "tls_ms": 30.6,
+          "ttfb_ms": 147.0,
+          "total_ms": 147.2,
           "body_bytes": 12635
         }
       }
