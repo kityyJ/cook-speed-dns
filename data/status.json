@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-26 06:54:14 UTC",
+  "generated_at": "2026-10-26 14:07:27 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 56,
+    "ct": 58,
     "cu": 120,
-    "cmcc": 55,
-    "all": 266
+    "cmcc": 56,
+    "all": 257
   },
   "healthy_sources": 20,
   "failed_sources": 0,
@@ -81,7 +81,7 @@
       "name": "CM CloudFlareYes",
       "url": "https://addressesapi.090227.xyz/CloudFlareYes",
       "ok": true,
-      "count": 15,
+      "count": 10,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
       "name": "天诚 多地区",
       "url": "https://bestcf.pages.dev/tiancheng/all.txt",
       "ok": true,
-      "count": 11,
+      "count": 2,
       "error": ""
     },
     {
@@ -180,7 +180,7 @@
       "name": "Gslege 测速",
       "url": "https://bestcf.pages.dev/gslege/Cfxyz.txt",
       "ok": true,
-      "count": 4,
+      "count": 3,
       "error": ""
     },
     {
