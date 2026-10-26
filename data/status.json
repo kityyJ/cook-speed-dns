@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-26 01:35:09 UTC",
+  "generated_at": "2026-10-26 06:54:14 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 59,
+    "ct": 56,
     "cu": 120,
-    "cmcc": 56,
-    "all": 279
+    "cmcc": 55,
+    "all": 266
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 21,
+  "filtered_slow": 25,
   "sources": [
     {
       "group": "ct",
@@ -81,7 +81,7 @@
       "name": "CM CloudFlareYes",
       "url": "https://addressesapi.090227.xyz/CloudFlareYes",
       "ok": true,
-      "count": 10,
+      "count": 15,
       "error": ""
     },
     {
@@ -90,7 +90,7 @@
       "name": "ZhiXuan 镜像",
       "url": "https://addressesapi.090227.xyz/ip.164746.xyz",
       "ok": true,
-      "count": 3,
+      "count": 1,
       "error": ""
     },
     {
@@ -117,7 +117,7 @@
       "name": "WeTest 三网",
       "url": "https://bestcf.pages.dev/wetest/ipv4.txt",
       "ok": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
       "name": "天诚 多地区",
       "url": "https://bestcf.pages.dev/tiancheng/all.txt",
       "ok": true,
-      "count": 13,
+      "count": 11,
       "error": ""
     },
     {
@@ -189,7 +189,7 @@
       "name": "S5 公益",
       "url": "https://bestcf.pages.dev/s5gy/all.txt",
       "ok": true,
-      "count": 114,
+      "count": 116,
       "error": ""
     }
   ]
