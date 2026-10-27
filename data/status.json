@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-27 20:36:12 UTC",
+  "generated_at": "2026-10-27 23:58:25 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 88,
+    "ct": 108,
     "cu": 120,
-    "cmcc": 76,
-    "all": 277
+    "cmcc": 96,
+    "all": 276
   },
   "healthy_sources": 16,
   "failed_sources": 4,
-  "filtered_slow": 23,
+  "filtered_slow": 24,
   "sources": [
     {
       "group": "ct",
@@ -171,7 +171,7 @@
       "name": "天诚 多地区",
       "url": "https://bestcf.pages.dev/tiancheng/all.txt",
       "ok": true,
-      "count": 2,
+      "count": 15,
       "error": ""
     },
     {
@@ -180,7 +180,7 @@
       "name": "Gslege 测速",
       "url": "https://bestcf.pages.dev/gslege/Cfxyz.txt",
       "ok": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     },
     {
