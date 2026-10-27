@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-26 23:48:33 UTC",
+  "generated_at": "2026-10-27 04:50:03 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 75,
+    "ct": 58,
     "cu": 120,
-    "cmcc": 86,
+    "cmcc": 55,
     "all": 281
   },
-  "healthy_sources": 16,
-  "failed_sources": 4,
-  "filtered_slow": 19,
+  "healthy_sources": 20,
+  "failed_sources": 0,
+  "filtered_slow": 13,
   "sources": [
     {
       "group": "ct",
       "group_title": "中国电信",
       "name": "CM 电信优选",
       "url": "https://addressesapi.090227.xyz/ct",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/ct"
+      "ok": true,
+      "count": 6,
+      "error": ""
     },
     {
       "group": "ct",
@@ -62,9 +62,9 @@
       "group_title": "中国移动",
       "name": "CM 移动优选",
       "url": "https://addressesapi.090227.xyz/cmcc",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/cmcc"
+      "ok": true,
+      "count": 6,
+      "error": ""
     },
     {
       "group": "cmcc",
@@ -80,18 +80,18 @@
       "group_title": "全部优选",
       "name": "CM CloudFlareYes",
       "url": "https://addressesapi.090227.xyz/CloudFlareYes",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/CloudFlareYes"
+      "ok": true,
+      "count": 15,
+      "error": ""
     },
     {
       "group": "all",
       "group_title": "全部优选",
       "name": "ZhiXuan 镜像",
       "url": "https://addressesapi.090227.xyz/ip.164746.xyz",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/ip.164746.xyz"
+      "ok": true,
+      "count": 2,
+      "error": ""
     },
     {
       "group": "all",
