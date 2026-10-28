@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-27 23:58:25 UTC",
+  "generated_at": "2026-10-28 05:25:32 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 108,
+    "ct": 53,
     "cu": 120,
-    "cmcc": 96,
-    "all": 276
+    "cmcc": 51,
+    "all": 254
   },
-  "healthy_sources": 16,
-  "failed_sources": 4,
-  "filtered_slow": 24,
+  "healthy_sources": 20,
+  "failed_sources": 0,
+  "filtered_slow": 25,
   "sources": [
     {
       "group": "ct",
       "group_title": "中国电信",
       "name": "CM 电信优选",
       "url": "https://addressesapi.090227.xyz/ct",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/ct"
+      "ok": true,
+      "count": 6,
+      "error": ""
     },
     {
       "group": "ct",
@@ -62,9 +62,9 @@
       "group_title": "中国移动",
       "name": "CM 移动优选",
       "url": "https://addressesapi.090227.xyz/cmcc",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/cmcc"
+      "ok": true,
+      "count": 6,
+      "error": ""
     },
     {
       "group": "cmcc",
@@ -80,18 +80,18 @@
       "group_title": "全部优选",
       "name": "CM CloudFlareYes",
       "url": "https://addressesapi.090227.xyz/CloudFlareYes",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/CloudFlareYes"
+      "ok": true,
+      "count": 10,
+      "error": ""
     },
     {
       "group": "all",
       "group_title": "全部优选",
       "name": "ZhiXuan 镜像",
       "url": "https://addressesapi.090227.xyz/ip.164746.xyz",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/ip.164746.xyz"
+      "ok": true,
+      "count": 1,
+      "error": ""
     },
     {
       "group": "all",
@@ -171,7 +171,7 @@
       "name": "天诚 多地区",
       "url": "https://bestcf.pages.dev/tiancheng/all.txt",
       "ok": true,
-      "count": 15,
+      "count": 5,
       "error": ""
     },
     {
@@ -180,7 +180,7 @@
       "name": "Gslege 测速",
       "url": "https://bestcf.pages.dev/gslege/Cfxyz.txt",
       "ok": true,
-      "count": 4,
+      "count": 3,
       "error": ""
     },
     {
