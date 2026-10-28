@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-28 17:19:21 UTC",
+  "generated_at": "2026-10-28 21:53:00 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 49,
+    "ct": 79,
     "cu": 120,
-    "cmcc": 56,
-    "all": 252
+    "cmcc": 76,
+    "all": 281
   },
-  "healthy_sources": 20,
-  "failed_sources": 0,
-  "filtered_slow": 24,
+  "healthy_sources": 16,
+  "failed_sources": 4,
+  "filtered_slow": 19,
   "sources": [
     {
       "group": "ct",
       "group_title": "中国电信",
       "name": "CM 电信优选",
       "url": "https://addressesapi.090227.xyz/ct",
-      "ok": true,
-      "count": 6,
-      "error": ""
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/ct"
     },
     {
       "group": "ct",
@@ -62,9 +62,9 @@
       "group_title": "中国移动",
       "name": "CM 移动优选",
       "url": "https://addressesapi.090227.xyz/cmcc",
-      "ok": true,
-      "count": 6,
-      "error": ""
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/cmcc"
     },
     {
       "group": "cmcc",
@@ -80,18 +80,18 @@
       "group_title": "全部优选",
       "name": "CM CloudFlareYes",
       "url": "https://addressesapi.090227.xyz/CloudFlareYes",
-      "ok": true,
-      "count": 10,
-      "error": ""
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/CloudFlareYes"
     },
     {
       "group": "all",
       "group_title": "全部优选",
       "name": "ZhiXuan 镜像",
       "url": "https://addressesapi.090227.xyz/ip.164746.xyz",
-      "ok": true,
-      "count": 1,
-      "error": ""
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/ip.164746.xyz"
     },
     {
       "group": "all",
@@ -180,7 +180,7 @@
       "name": "Gslege 测速",
       "url": "https://bestcf.pages.dev/gslege/Cfxyz.txt",
       "ok": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -189,7 +189,7 @@
       "name": "S5 公益",
       "url": "https://bestcf.pages.dev/s5gy/all.txt",
       "ok": true,
-      "count": 107,
+      "count": 116,
       "error": ""
     }
   ]
