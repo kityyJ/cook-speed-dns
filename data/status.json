@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-29 15:29:38 UTC",
+  "generated_at": "2026-10-29 20:30:04 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
     "ct": 54,
     "cu": 120,
     "cmcc": 51,
-    "all": 260
+    "all": 275
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 25,
+  "filtered_slow": 10,
   "sources": [
     {
       "group": "ct",
@@ -90,7 +90,7 @@
       "name": "ZhiXuan 镜像",
       "url": "https://addressesapi.090227.xyz/ip.164746.xyz",
       "ok": true,
-      "count": 2,
+      "count": 1,
       "error": ""
     },
     {
