@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-30 00:13:14 UTC",
+  "generated_at": "2026-10-30 06:20:46 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 52,
+    "ct": 54,
     "cu": 120,
     "cmcc": 51,
-    "all": 276
+    "all": 267
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 13,
+  "filtered_slow": 21,
   "sources": [
     {
       "group": "ct",
@@ -90,7 +90,7 @@
       "name": "ZhiXuan 镜像",
       "url": "https://addressesapi.090227.xyz/ip.164746.xyz",
       "ok": true,
-      "count": 2,
+      "count": 1,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
       "name": "天诚 多地区",
       "url": "https://bestcf.pages.dev/tiancheng/all.txt",
       "ok": true,
-      "count": 17,
+      "count": 14,
       "error": ""
     },
     {
