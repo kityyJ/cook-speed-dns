@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-01 02:06:03 UTC",
+  "generated_at": "2026-11-01 09:08:00 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 26,
+    "ct": 28,
     "cu": 120,
     "cmcc": 26,
-    "all": 199
+    "all": 185
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 13,
+  "filtered_slow": 24,
   "sources": [
     {
       "group": "ct",
@@ -171,7 +171,7 @@
       "name": "天诚 多地区",
       "url": "https://bestcf.pages.dev/tiancheng/all.txt",
       "ok": true,
-      "count": 18,
+      "count": 13,
       "error": ""
     },
     {
