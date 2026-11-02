@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-02 00:33:10 UTC",
+  "generated_at": "2026-11-02 06:43:49 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 27,
+    "ct": 25,
     "cu": 120,
     "cmcc": 26,
-    "all": 201
+    "all": 184
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 12,
+  "filtered_slow": 25,
   "sources": [
     {
       "group": "ct",
@@ -117,7 +117,7 @@
       "name": "WeTest 三网",
       "url": "https://bestcf.pages.dev/wetest/ipv4.txt",
       "ok": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
       "name": "天诚 多地区",
       "url": "https://bestcf.pages.dev/tiancheng/all.txt",
       "ok": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
