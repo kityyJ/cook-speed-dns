@@ -2,6 +2,8 @@
 """Read-only audit of CDN DNS A records for real website HTTPS compatibility.
 
 Run from GitHub Actions (not a mainland-China latency probe). No DNS writes.
+The published gray-cloud A pool is audited as-is. Only an empty or
+inconsistent pool is rejected before the HTTPS checks.
 """
 import concurrent.futures
 import os
@@ -15,6 +17,33 @@ from dnscf import audit_site_https, dns_records
 
 HOSTS = ("www.jia.nz", "cook.jia.nz")
 CDN_NAME = "cdn.yigeyao.com"
+# Same bounds as CF_DNS_RECORD_COUNT in dnscf.py. The configured target lives
+# in dns_cf.yml and is intentionally not repeated here.
+POOL_MIN = 1
+POOL_MAX = 100
+
+
+def consistent_gray_cloud_ips(records):
+    """Sorted unique DNS-only addresses, or None when the pool is not auditable.
+
+    A consistent pool is entirely gray-cloud, has one address per A record,
+    and stays inside the updater's 1-100 record limit. The audit follows
+    whatever size that updater last published.
+    """
+    if not isinstance(records, list) or not POOL_MIN <= len(records) <= POOL_MAX:
+        return None
+    contents = []
+    for record in records:
+        if not isinstance(record, dict) or record.get("proxied") is not False:
+            return None
+        content = record.get("content")
+        if not isinstance(content, str) or not content:
+            return None
+        contents.append(content)
+    unique = sorted(set(contents))
+    if len(unique) != len(records):
+        return None
+    return unique
 
 
 def main():
@@ -26,9 +55,21 @@ def main():
 
     with requests.Session() as session:
         records = dns_records(session, zone_id, CDN_NAME, token)
-    ips = sorted({r["content"] for r in records if r.get("proxied") is False})
-    if len(ips) != 30 or len(records) != 30:
-        print(f"Unexpected {CDN_NAME} A pool: {len(records)} entries, {len(ips)} unique gray-cloud IPs")
+    ips = consistent_gray_cloud_ips(records)
+    if ips is None:
+        gray = {
+            record.get("content")
+            for record in records
+            if isinstance(record, dict)
+            and record.get("proxied") is False
+            and isinstance(record.get("content"), str)
+            and record.get("content")
+        }
+        print(
+            f"Unexpected {CDN_NAME} A pool: {len(records)} entries, "
+            f"{len(gray)} unique gray-cloud IPs "
+            f"(need {POOL_MIN}-{POOL_MAX} unique DNS-only A records)"
+        )
         return 2
 
     print(f"Auditing {len(ips)} CDN IPs x {len(HOSTS)} HTTPS sites.")
