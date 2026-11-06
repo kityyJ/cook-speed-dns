@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-06 18:20:50 UTC",
+  "generated_at": "2026-11-06 23:27:26 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 27,
+    "ct": 47,
     "cu": 120,
-    "cmcc": 26,
-    "all": 189
+    "cmcc": 46,
+    "all": 227
   },
-  "healthy_sources": 20,
-  "failed_sources": 0,
+  "healthy_sources": 16,
+  "failed_sources": 4,
   "filtered_slow": 19,
   "sources": [
     {
@@ -17,9 +17,9 @@
       "group_title": "中国电信",
       "name": "CM 电信优选",
       "url": "https://addressesapi.090227.xyz/ct",
-      "ok": true,
-      "count": 6,
-      "error": ""
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/ct"
     },
     {
       "group": "ct",
@@ -62,9 +62,9 @@
       "group_title": "中国移动",
       "name": "CM 移动优选",
       "url": "https://addressesapi.090227.xyz/cmcc",
-      "ok": true,
-      "count": 6,
-      "error": ""
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/cmcc"
     },
     {
       "group": "cmcc",
@@ -80,18 +80,18 @@
       "group_title": "全部优选",
       "name": "CM CloudFlareYes",
       "url": "https://addressesapi.090227.xyz/CloudFlareYes",
-      "ok": true,
-      "count": 10,
-      "error": ""
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/CloudFlareYes"
     },
     {
       "group": "all",
       "group_title": "全部优选",
       "name": "ZhiXuan 镜像",
       "url": "https://addressesapi.090227.xyz/ip.164746.xyz",
-      "ok": true,
-      "count": 2,
-      "error": ""
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://addressesapi.090227.xyz/ip.164746.xyz"
     },
     {
       "group": "all",
@@ -117,7 +117,7 @@
       "name": "WeTest 三网",
       "url": "https://bestcf.pages.dev/wetest/ipv4.txt",
       "ok": true,
-      "count": 17,
+      "count": 15,
       "error": ""
     },
     {
@@ -135,7 +135,7 @@
       "name": "UOUIN 三网",
       "url": "https://bestcf.pages.dev/uouin/all.txt",
       "ok": true,
-      "count": 40,
+      "count": 41,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
       "name": "LZJ 多地区",
       "url": "https://bestcf.pages.dev/lzj/all.txt",
       "ok": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -180,7 +180,7 @@
       "name": "Gslege 测速",
       "url": "https://bestcf.pages.dev/gslege/Cfxyz.txt",
       "ok": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     },
     {
