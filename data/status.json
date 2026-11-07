@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-07 03:07:40 UTC",
+  "generated_at": "2026-11-07 10:37:54 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 27,
+    "ct": 26,
     "cu": 120,
     "cmcc": 26,
-    "all": 191
+    "all": 197
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 24,
+  "filtered_slow": 19,
   "sources": [
     {
       "group": "ct",
@@ -90,7 +90,7 @@
       "name": "ZhiXuan 镜像",
       "url": "https://addressesapi.090227.xyz/ip.164746.xyz",
       "ok": true,
-      "count": 3,
+      "count": 2,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
       "name": "LZJ 多地区",
       "url": "https://bestcf.pages.dev/lzj/all.txt",
       "ok": true,
-      "count": 8,
+      "count": 3,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
       "name": "天诚 多地区",
       "url": "https://bestcf.pages.dev/tiancheng/all.txt",
       "ok": true,
-      "count": 5,
+      "count": 17,
       "error": ""
     },
     {
@@ -180,7 +180,7 @@
       "name": "Gslege 测速",
       "url": "https://bestcf.pages.dev/gslege/Cfxyz.txt",
       "ok": true,
-      "count": 8,
+      "count": 4,
       "error": ""
     },
     {
