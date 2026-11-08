@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-08 18:45:48 UTC",
+  "generated_at": "2026-11-08 22:46:13 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 48,
+    "ct": 67,
     "cu": 120,
-    "cmcc": 46,
-    "all": 228
+    "cmcc": 66,
+    "all": 262
   },
   "healthy_sources": 16,
   "failed_sources": 4,
-  "filtered_slow": 27,
+  "filtered_slow": 33,
   "sources": [
     {
       "group": "ct",
@@ -117,7 +117,7 @@
       "name": "WeTest 三网",
       "url": "https://bestcf.pages.dev/wetest/ipv4.txt",
       "ok": true,
-      "count": 17,
+      "count": 15,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
       "name": "LZJ 多地区",
       "url": "https://bestcf.pages.dev/lzj/all.txt",
       "ok": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
