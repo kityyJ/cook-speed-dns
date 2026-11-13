@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-13 15:39:07 UTC",
+  "generated_at": "2026-11-13 21:54:59 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 29,
+    "ct": 27,
     "cu": 120,
     "cmcc": 26,
-    "all": 194
+    "all": 211
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 22,
+  "filtered_slow": 7,
   "sources": [
     {
       "group": "ct",
@@ -90,7 +90,7 @@
       "name": "ZhiXuan 镜像",
       "url": "https://addressesapi.090227.xyz/ip.164746.xyz",
       "ok": true,
-      "count": 4,
+      "count": 10,
       "error": ""
     },
     {
@@ -135,7 +135,7 @@
       "name": "UOUIN 三网",
       "url": "https://bestcf.pages.dev/uouin/all.txt",
       "ok": true,
-      "count": 41,
+      "count": 42,
       "error": ""
     },
     {
