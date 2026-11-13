@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-13 07:08:59 UTC",
+  "generated_at": "2026-11-13 15:39:07 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 28,
+    "ct": 29,
     "cu": 120,
     "cmcc": 26,
-    "all": 205
+    "all": 194
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 14,
+  "filtered_slow": 22,
   "sources": [
     {
       "group": "ct",
@@ -135,7 +135,7 @@
       "name": "UOUIN 三网",
       "url": "https://bestcf.pages.dev/uouin/all.txt",
       "ok": true,
-      "count": 40,
+      "count": 41,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
       "name": "天诚 多地区",
       "url": "https://bestcf.pages.dev/tiancheng/all.txt",
       "ok": true,
-      "count": 5,
+      "count": 7,
       "error": ""
     },
     {
@@ -180,7 +180,7 @@
       "name": "Gslege 测速",
       "url": "https://bestcf.pages.dev/gslege/Cfxyz.txt",
       "ok": true,
-      "count": 12,
+      "count": 3,
       "error": ""
     },
     {
