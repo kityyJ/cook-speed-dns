@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-15 00:13:42 UTC",
+  "generated_at": "2026-11-15 07:05:11 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 27,
+    "ct": 26,
     "cu": 120,
     "cmcc": 26,
-    "all": 247
+    "all": 237
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 7,
+  "filtered_slow": 14,
   "sources": [
     {
       "group": "ct",
@@ -135,7 +135,7 @@
       "name": "UOUIN 三网",
       "url": "https://bestcf.pages.dev/uouin/all.txt",
       "ok": true,
-      "count": 41,
+      "count": 42,
       "error": ""
     },
     {
