@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-16 17:21:35 UTC",
+  "generated_at": "2026-11-17 01:00:13 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
-    "ct": 29,
+    "ct": 28,
     "cu": 120,
-    "cmcc": 26,
-    "all": 229
+    "cmcc": 22,
+    "all": 254
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 18,
+  "filtered_slow": 3,
   "sources": [
     {
       "group": "ct",
@@ -90,7 +90,7 @@
       "name": "ZhiXuan 镜像",
       "url": "https://addressesapi.090227.xyz/ip.164746.xyz",
       "ok": true,
-      "count": 1,
+      "count": 10,
       "error": ""
     },
     {
@@ -117,7 +117,7 @@
       "name": "WeTest 三网",
       "url": "https://bestcf.pages.dev/wetest/ipv4.txt",
       "ok": true,
-      "count": 17,
+      "count": 12,
       "error": ""
     },
     {
@@ -180,7 +180,7 @@
       "name": "Gslege 测速",
       "url": "https://bestcf.pages.dev/gslege/Cfxyz.txt",
       "ok": true,
-      "count": 3,
+      "count": 12,
       "error": ""
     },
     {
