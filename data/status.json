@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-19 07:50:02 UTC",
+  "generated_at": "2026-11-19 17:16:27 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
     "ct": 28,
     "cu": 120,
     "cmcc": 26,
-    "all": 239
+    "all": 217
   },
   "healthy_sources": 20,
   "failed_sources": 0,
@@ -90,7 +90,7 @@
       "name": "ZhiXuan 镜像",
       "url": "https://addressesapi.090227.xyz/ip.164746.xyz",
       "ok": true,
-      "count": 2,
+      "count": 3,
       "error": ""
     },
     {
@@ -135,7 +135,7 @@
       "name": "UOUIN 三网",
       "url": "https://bestcf.pages.dev/uouin/all.txt",
       "ok": true,
-      "count": 42,
+      "count": 40,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
       "name": "天诚 多地区",
       "url": "https://bestcf.pages.dev/tiancheng/all.txt",
       "ok": true,
-      "count": 22,
+      "count": 5,
       "error": ""
     },
     {
@@ -180,7 +180,7 @@
       "name": "Gslege 测速",
       "url": "https://bestcf.pages.dev/gslege/Cfxyz.txt",
       "ok": true,
-      "count": 12,
+      "count": 5,
       "error": ""
     },
     {
