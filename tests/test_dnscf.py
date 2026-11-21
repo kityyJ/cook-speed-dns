@@ -144,6 +144,114 @@ class DNSTests(unittest.TestCase):
         with self.assertRaises(DnsSyncError):
             limit_rotation([], ["104.17.1.1"], max_changes=101)
 
+    def test_dns_rotation_replaces_oldest_stale_by_modified_on(self):
+        # ID order matches dns_records(). The oldest stale row is the head, which
+        # the previous ID-order cap would keep forever.
+        records = [
+            {"id": "id-00", "content": "104.17.1.4",
+             "modified_on": "2026-01-01T00:00:00Z", "created_on": "2026-01-01T00:00:00Z"},
+            {"id": "id-01", "content": "104.17.1.2",
+             "modified_on": "2026-10-14T00:00:00Z", "created_on": "2026-10-14T00:00:00Z"},
+            {"id": "id-02", "content": "104.17.1.3",
+             "modified_on": "2026-11-01T00:00:00Z", "created_on": "2026-10-14T00:00:00Z"},
+            {"id": "id-03", "content": "104.17.1.1",
+             "modified_on": "2026-11-20T00:00:00.900000Z", "created_on": "2026-11-20T00:00:00Z"},
+        ]
+        desired = ["104.17.9.1", "104.17.9.2", "104.17.9.3", "104.17.1.4"]
+        replaced_one = limit_rotation(records, desired, max_changes=1)
+        self.assertIn("104.17.1.4", replaced_one)
+        self.assertNotIn("104.17.1.2", replaced_one)
+        self.assertIn("104.17.1.3", replaced_one)
+        self.assertIn("104.17.1.1", replaced_one)
+        self.assertEqual(len(set(replaced_one) & set(desired[:3])), 1)
+
+        replaced_two = limit_rotation(records, desired, max_changes=2)
+        self.assertIn("104.17.1.4", replaced_two)
+        self.assertNotIn("104.17.1.2", replaced_two)
+        self.assertNotIn("104.17.1.3", replaced_two)
+        self.assertIn("104.17.1.1", replaced_two)
+        self.assertEqual(len(set(replaced_two) & set(desired[:3])), 2)
+
+    def test_dns_rotation_drains_oldest_batch_without_churning_fresh_ips(self):
+        count = 18
+        records = [
+            {"id": f"id-{i:02d}", "content": f"104.17.1.{i + 1}",
+             "modified_on": f"2026-10-14T00:{i:02d}:00Z", "created_on": "2026-10-14T00:00:00Z"}
+            for i in range(count)
+        ]
+        written = []
+        for run in range(3):
+            desired = [f"104.17.{run + 2}.{i + 1}" for i in range(count)]
+            result = limit_rotation(records, desired, max_changes=6)
+            pool = {rec["content"] for rec in records}
+            evicted = pool - set(result)
+            expected = {f"104.17.1.{i}" for i in range(run * 6 + 1, run * 6 + 7)}
+            self.assertEqual(evicted, expected)
+            for batch in written:
+                self.assertTrue(batch <= set(result))
+            added = [ip for ip in result if ip not in pool]
+            self.assertEqual(added, desired[:6])
+            pending = list(added)
+            for rec in records:
+                if rec["content"] not in result:
+                    rec["content"] = pending.pop(0)
+                    rec["modified_on"] = f"2026-11-2{run}T01:00:00Z"
+            self.assertEqual(pending, [])
+            records.sort(key=lambda rec: rec["id"])
+            written.append(set(added))
+        self.assertFalse(any(ip.startswith("104.17.1.") for ip in (rec["content"] for rec in records)))
+        for batch in written:
+            self.assertTrue(batch <= {rec["content"] for rec in records})
+
+    def test_dns_listing_passes_timestamps_into_rotation(self):
+        payload = [
+            {"id": "b", "name": "cdn.yigeyao.com", "type": "A", "content": "104.17.1.1",
+             "proxied": False, "modified_on": "2026-11-20T00:00:00Z", "created_on": "2026-10-01T00:00:00Z"},
+            {"id": "a", "name": "cdn.yigeyao.com", "type": "A", "content": "104.17.1.2",
+             "proxied": False, "modified_on": "2026-10-14T00:00:00Z", "created_on": "2026-10-14T00:00:00Z"},
+        ]
+        sess = FakeSession([FakeResponse(payload)])
+        records = dns_records(sess, "zone", "cdn.yigeyao.com", "token")
+        self.assertEqual(
+            [(rec["id"], rec["content"], rec["modified_on"], rec["created_on"]) for rec in records],
+            [
+                ("a", "104.17.1.2", "2026-10-14T00:00:00Z", "2026-10-14T00:00:00Z"),
+                ("b", "104.17.1.1", "2026-11-20T00:00:00Z", "2026-10-01T00:00:00Z"),
+            ],
+        )
+        result = limit_rotation(records, ["104.17.9.1", "104.17.9.2"], max_changes=1)
+        self.assertNotIn("104.17.1.2", result)
+        self.assertIn("104.17.1.1", result)
+
+    def test_dns_rotation_age_falls_back_to_created_on_then_id(self):
+        # Head rows are the ones an ID-order cap would keep. Fallback keys must
+        # still evict them when they are the older stale addresses.
+        by_created = [
+            {"id": "aaa", "content": "104.17.1.2", "created_on": "2026-10-14T00:00:00Z"},
+            {"id": "zzz", "content": "104.17.1.1", "created_on": "2026-11-20T00:00:00Z"},
+        ]
+        created_result = limit_rotation(by_created, ["104.17.9.1", "104.17.9.2"], max_changes=1)
+        self.assertNotIn("104.17.1.2", created_result)
+        self.assertIn("104.17.1.1", created_result)
+
+        by_id = [
+            {"id": "aaa", "content": "104.17.1.2"},
+            {"id": "zzz", "content": "104.17.1.1"},
+        ]
+        id_result = limit_rotation(by_id, ["104.17.9.1", "104.17.9.2"], max_changes=1)
+        self.assertNotIn("104.17.1.2", id_result)
+        self.assertIn("104.17.1.1", id_result)
+
+        modified_over_created = [
+            {"id": "aaa", "content": "104.17.1.2", "created_on": "2026-10-14T00:00:00Z"},
+            {"id": "zzz", "content": "104.17.1.1",
+             "modified_on": "2026-11-20T00:00:00Z", "created_on": "2020-01-01T00:00:00Z"},
+        ]
+        modified_result = limit_rotation(
+            modified_over_created, ["104.17.9.1", "104.17.9.2"], max_changes=1)
+        self.assertNotIn("104.17.1.2", modified_result)
+        self.assertIn("104.17.1.1", modified_result)
+
     def test_strict_rtt_pool_excludes_unmeasured_and_over_limit(self):
         pools = {
             "ct": [
