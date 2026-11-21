@@ -66,6 +66,8 @@ def dns_records(session, zone_id, dns_name, token):
         if page >= total_pages:
             break
         page += 1
+    # Keep the API record intact. limit_rotation reads modified_on / created_on
+    # from these objects; dropping them would freeze eviction on record ID.
     return sorted(found, key=lambda rec: rec["id"])
 
 
@@ -247,9 +249,50 @@ def tcp_reachable(ip, timeout=2.0):
 
 
 
+def _parse_cf_time(value):
+    """Parse a Cloudflare RFC3339 timestamp. Unparseable values count as missing."""
+    if not isinstance(value, str) or not value.strip():
+        return None
+    text = value.strip()
+    if text.endswith(("Z", "z")):
+        text = text[:-1] + "+00:00"
+    if "." in text:
+        head, tail = text.split(".", 1)
+        frac, sign, tz = tail, "", ""
+        for marker in ("+", "-"):
+            if marker in tail:
+                frac, tz = tail.split(marker, 1)
+                sign = marker
+                break
+        frac = (frac[:6]).ljust(6, "0")
+        text = f"{head}.{frac}{sign}{tz}"
+    try:
+        parsed = datetime.fromisoformat(text)
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        return parsed.replace(tzinfo=timezone.utc)
+    return parsed
+
+
+def _rotation_age_key(rec):
+    """Oldest first: modified_on, otherwise created_on, otherwise record ID.
+
+    PATCHed rows keep their Cloudflare ID and only move forward in modified_on,
+    so ID order must not decide which stale address stays.
+    """
+    modified = _parse_cf_time(rec.get("modified_on"))
+    created = _parse_cf_time(rec.get("created_on"))
+    when = modified or created or datetime.min.replace(tzinfo=timezone.utc)
+    return (when, str(rec.get("id") or ""))
+
+
 def limit_rotation(records, desired, max_changes=6):
     """Keep a working DNS address pool stable; replace at most N IPs per run.
 
+    Stale addresses (not in the new preferred set) are evicted oldest-first.
+    Age is modified_on, then created_on, then record ID. An address that is
+    still preferred is never dropped to free a slot for a stale one.
     Initial provisioning, and size repairs, are allowed to complete immediately.
     This is DNS-pool stability, NOT proof that retained IPs work for all visitors.
     """
@@ -263,13 +306,22 @@ def limit_rotation(records, desired, max_changes=6):
     incoming = [ip for ip in desired if ip not in current_set]
     if len(incoming) <= max_changes:
         return desired
-    retained = [ip for ip in current if ip not in target_set]
+    age_by_ip = {}
+    for rec in records:
+        ip = rec["content"]
+        key = _rotation_age_key(rec)
+        if ip not in age_by_ip or key < age_by_ip[ip]:
+            age_by_ip[ip] = key
+    stale = [ip for ip in current if ip not in target_set]
+    stale.sort(key=lambda ip: age_by_ip[ip])
+    kept_stale = stale[max_changes:]
     unchanged = [ip for ip in desired if ip in current_set]
-    result = unchanged + incoming[:max_changes] + retained[:len(retained) - max_changes]
+    result = unchanged + incoming[:max_changes] + kept_stale
     if len(result) != len(desired) or len(set(result)) != len(result):
         raise DnsSyncError("DNS rotation produced duplicates or wrong record count")
     print(f"Gradual rollout: {len(incoming)} replacements requested, "
-          f"applying up to {max_changes}; {len(retained) - max_changes} kept until later checks")
+          f"applying up to {max_changes}; {len(kept_stale)} kept until later checks")
+    print(f"Replacing oldest stale IPs: {', '.join(stale[:max_changes])}")
     return result
 
 
