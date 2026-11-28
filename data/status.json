@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-28 04:40:46 UTC",
+  "generated_at": "2026-11-28 14:03:11 UTC",
   "cloudflare_range_source": "live",
   "cloudflare_only": true,
   "counts": {
     "ct": 26,
     "cu": 120,
     "cmcc": 26,
-    "all": 229
+    "all": 205
   },
   "healthy_sources": 20,
   "failed_sources": 0,
-  "filtered_slow": 19,
+  "filtered_slow": 25,
   "sources": [
     {
       "group": "ct",
@@ -162,7 +162,7 @@
       "name": "LZJ 多地区",
       "url": "https://bestcf.pages.dev/lzj/all.txt",
       "ok": true,
-      "count": 32,
+      "count": 33,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
       "name": "天诚 多地区",
       "url": "https://bestcf.pages.dev/tiancheng/all.txt",
       "ok": true,
-      "count": 23,
+      "count": 4,
       "error": ""
     },
     {
